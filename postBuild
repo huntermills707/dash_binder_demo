@@ -1,0 +1,3 @@
+jupyter serverextension enable --sys-prefix jupyter_server_proxy
+mv my_extension.py ${NB_PYTHON_PREFIX}/lib/python*/site-packages/
+jupyter serverextension enable --sys-prefix my_extension
