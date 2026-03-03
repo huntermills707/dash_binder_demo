@@ -1,5 +1,0 @@
-#!/usr/bin/env bash
-# postBuild – runs once after the Docker image is built
-
-# Example: make the start script executable
-chmod +x start.sh
