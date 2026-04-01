@@ -1,16 +1,7 @@
-import os
 import dash
 from dash import html, dcc, callback, Input, Output
 
-service_prefix = os.environ.get("JUPYTERHUB_SERVICE_PREFIX", "/")
-if not service_prefix.endswith("/"):
-    service_prefix += "/"
-prefix = service_prefix + "proxy/8050/"
-
-app = dash.Dash(
-    __name__,
-    requests_pathname_prefix=prefix,
-)
+app = dash.Dash(__name__)
 
 app.layout = html.Div([
     html.H1("Dash on Binder"),
