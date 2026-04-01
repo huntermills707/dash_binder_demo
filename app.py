@@ -29,4 +29,4 @@ def update_greeting(name):
     return f"Hello, {name}!"
 
 if __name__ == "__main__":
-    app.run_server(debug=False, host="0.0.0.0", port=8050)
+    app.run(debug=False, host="0.0.0.0", port=8050)
