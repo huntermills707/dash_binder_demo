@@ -6,5 +6,5 @@ def setup_dash():
         "command": ["python", os.path.join(here, "app.py")],
         "port": 8050,
         "timeout": 30,
-        "absolute_url": False,
+        "absolute_url": True,
     }
