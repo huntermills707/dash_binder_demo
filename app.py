@@ -2,10 +2,10 @@ import os
 import dash
 from dash import html, dcc, callback, Input, Output
 
-# Build the correct prefix for Binder's proxy path.
-# JUPYTERHUB_SERVICE_PREFIX is set automatically by Binder/JupyterHub.
 service_prefix = os.environ.get("JUPYTERHUB_SERVICE_PREFIX", "/")
-prefix = f"{service_prefix}proxy/8050/"
+if not service_prefix.endswith("/"):
+    service_prefix += "/"
+prefix = service_prefix + "proxy/8050/"
 
 app = dash.Dash(
     __name__,
