@@ -1,5 +1,2 @@
 dash
-plotly
-voila
-ipywidgets
 jupyter-server-proxy
