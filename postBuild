@@ -1,3 +1,2 @@
-jupyter server extension enable --sys-prefix jupyter_server_proxy
-mv my_extension.py ${NB_PYTHON_PREFIX}/lib/python*/site-packages/
-jupyter server extension enable --sys-prefix my_extension
+#!/bin/bash
+pip install -e .
