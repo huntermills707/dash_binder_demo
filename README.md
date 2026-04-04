@@ -1,8 +1,14 @@
 # Dash on Binder — Auto-Launch Demo
 
-A minimal demo showing how to run a [Plotly Dash](https://dash.plotly.com/) app on [Binder](https://mybinder.org) that launches automatically from a single link — no notebooks, no terminal commands, no button clicks.
+A minimal demo showing how to run a [Plotly Dash](https://dash.plotly.com/) app on [Binder](https://mybinder.org) that launches automatically from a single link. No notebooks, no terminal commands, and no button clicks.
 
 [![Launch on Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/huntermills707/dash_binder_demo/main?urlpath=dash/)
+
+## What is Binder?
+ 
+[Binder](https://mybinder.org) is a free, open-source service that turns a GitHub repo into a live, interactive environment — no installation required. You give it a repo, it builds a Docker image with your dependencies, and gives you a shareable link that anyone can click to get a running copy. It's commonly used for sharing reproducible notebooks, tutorials, and demos. Environments spin up on demand and shut down after about 10 minutes of inactivity, so it's ideal for demos and exploration, not production hosting.
+ 
+This repo demonstrates how to go a step further and serve a full Dash web app through Binder, not just a notebook.
 
 ## How it works
 
